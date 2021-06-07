@@ -1,9 +1,8 @@
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Calculadora {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
    
         System.out.println("Escolhha a operação a ser realizada: ");
         System.out.println("[1] para adição");
@@ -20,6 +19,13 @@ public class Calculadora {
             System.out.println("Saindo do programa...");
             System.exit(0);
         }
+        /*else{
+            if (opcao != 1 || opcao != 2 || opcao != 3 || opcao != 4) {
+                System.out.println("Opção inválida");
+                System.out.println("Encerrando programa...");
+                System.exit(0);
+            }
+        }*/
 
         System.out.print("Digite um valor: ");
         int n1 = leitor.nextInt();
@@ -44,7 +50,7 @@ public class Calculadora {
             System.out.println(n1 + " / " + n2 + " = " + divisão);
             break;
             default:
-            System.out.println("Opçao inválida.");
+                System.out.println("Opção inválida.");
         }
     }
 }
