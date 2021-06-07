@@ -50,7 +50,7 @@ public class Calculadora {
             System.out.println(n1 + " / " + n2 + " = " + divisão);
             break;
             default:
-                System.out.println("Opção inválida.");
+            System.out.println("Opção inválida.");
         }
     }
 }
